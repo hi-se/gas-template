@@ -10,8 +10,8 @@
   },
   "scripts": {
     "open": "clasp open",
-    "build": "npx webpack",
-    "buildpush": "cp appsscript.json build/appsscript.json && npx webpack && clasp push --force",
+    "build": "node build.js",
+    "buildpush": "cp appsscript.json build/appsscript.json && yarn run build && clasp push --force",
     "postinstall": "mkdir -p build && cp appsscript.json build/appsscript.json"
   },
   "dependencies": {},
