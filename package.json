@@ -11,9 +11,10 @@
   "scripts": {
     "open:prod": "clasp_config_project=.clasp.prod.json clasp open",
     "open:dev": "clasp_config_project=.clasp.dev.json clasp open",
-    "lint": "eslint --fix src/**/*.ts",
+    "lint": "eslint src/**/*.ts",
+    "lint-fix": "yarn lint --fix",
     "format": "prettier --write src/**/*.ts",
-    "typecheck": "tsc --noEmit",
+    "type-check": "tsc --noEmit",
     "build": "node build.js",
     "buildpush:prod": "yarn run build && cp appsscript.json build/appsscript.json && clasp_config_project=.clasp.prod.json clasp push --force",
     "buildpush:dev": " yarn run build && cp appsscript.json build/appsscript.json && clasp_config_project=.clasp.dev.json clasp push --force",
