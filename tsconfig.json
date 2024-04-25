@@ -2,6 +2,10 @@
   "include": [
     "src"
   ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ],
   "compilerOptions": {
     "outDir": "build",
     "target": "ES2019",
@@ -14,5 +18,9 @@
     "esModuleInterop": true,
     "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true
   }
 }
