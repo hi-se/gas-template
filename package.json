@@ -2,7 +2,7 @@
   "name": "gas-template",
   "version": "1.0.0",
   "description": "",
-  "main": "build/backend.js",
+  "license": "UNLICENSED",
   "private": true,
   "engines": {
     "node": ">=20",
