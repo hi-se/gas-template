@@ -8,6 +8,7 @@
     "node": ">=20",
     "yarn": ">=1.22"
   },
+  "type": "module",
   "scripts": {
     "open:prod": "clasp_config_project=.clasp.prod.json clasp open",
     "open:dev": "clasp_config_project=.clasp.dev.json clasp open",
