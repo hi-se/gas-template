@@ -2,8 +2,6 @@ name: Check
 on:
   workflow_dispatch:
   pull_request:
-    paths:
-      - "**.ts"
   push:
     branches:
       - main
@@ -19,28 +17,27 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "yarn"
-          cache-dependency-path: "yarn.lock"
+          cache: "pnpm"
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: pnpm install
       - name: Type check
-        run: yarn type-check
-
+        run: pnpm type-check
   lint:
     name: lint
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "yarn"
-          cache-dependency-path: "yarn.lock"
+          cache: "pnpm"
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: pnpm install
       - name: Lint
-        run: yarn lint
+        run: pnpm lint
