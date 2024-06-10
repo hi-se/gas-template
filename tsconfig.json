@@ -1,7 +1,4 @@
 {
-  "include": [
-    "src"
-  ],
   "compilerOptions": {
     /* Base Options: */
     "esModuleInterop": true,
@@ -24,5 +21,10 @@
     "lib": [
       "es2022"
     ]
-  }
+  },
+  "exclude": [
+    "rollup.config.js",
+    "babel.config.js",
+    "eslint.config.js"
+  ]
 }
