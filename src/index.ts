@@ -1,4 +1,5 @@
-import { main } from "./app";
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+import { main } from "./app.js";
 
 /**
  * @file GASエディタから実行できる関数を定義する
