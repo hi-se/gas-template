@@ -6,9 +6,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "lint": "eslint src/**/*.ts",
-    "lint-fix": "pnpm lint --fix",
-    "format": "prettier --write src/**/*.ts",
+    "lint": "biome check",
+    "lint-fix": "biome check --write",
     "type-check": "tsc --noEmit",
     "build": "rollup -c",
     "open:dev": "clasp_config_project=.clasp.dev.json clasp open",
@@ -22,7 +21,6 @@
     "@babel/plugin-transform-runtime": "^7.25.9",
     "@babel/preset-env": "^7.26.0",
     "@babel/preset-typescript": "^7.26.0",
-    "@eslint/js": "^9.15.0",
     "@google/clasp": "^2.4.2",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-node-resolve": "^15.3.0",
@@ -30,15 +28,10 @@
     "@types/eslint__js": "^8.42.3",
     "@types/google-apps-script": "^1.0.85",
     "@types/node": "^22.10.0",
-    "eslint": "^9.15.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-simple-import-sort": "^12.1.1",
-    "prettier": "^3.4.1",
+    "biome": "^0.3.3",
     "rollup": "^4.27.4",
     "rollup-plugin-google-apps-script": "^2.0.1",
-    "typescript": "^5.7.2",
-    "typescript-eslint": "^8.16.0"
+    "typescript": "^5.7.2"
   },
   "packageManager": "pnpm@9.14.2+sha512.6e2baf77d06b9362294152c851c4f278ede37ab1eba3a55fda317a4a17b209f4dbb973fb250a77abc463a341fcb1f17f17cfa24091c4eb319cda0d9b84278387"
 }
