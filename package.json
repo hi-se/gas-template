@@ -10,11 +10,11 @@
     "lint-fix": "biome check --write",
     "type-check": "tsc --noEmit",
     "build": "rollup -c",
+    "prepush": "mkdir -p build && cp appsscript.json build/appsscript.json",
     "open:dev": "clasp_config_project=.clasp.dev.json clasp open",
     "open:prod": "clasp_config_project=.clasp.prod.json clasp open",
-    "buildpush:prod": "pnpm run build && cp appsscript.json build/appsscript.json && clasp_config_project=.clasp.prod.json clasp push --force",
-    "buildpush:dev": " pnpm run build && cp appsscript.json build/appsscript.json && clasp_config_project=.clasp.dev.json clasp push --force",
-    "postinstall": "mkdir -p build && cp appsscript.json build/appsscript.json"
+    "buildpush:prod": "pnpm run build && pnpm run prepush && clasp_config_project=.clasp.prod.json clasp push --force",
+    "buildpush:dev": " pnpm run build && pnpm run prepush && clasp_config_project=.clasp.dev.json clasp push --force"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
