@@ -21,17 +21,17 @@
     "@babel/plugin-transform-runtime": "^7.25.9",
     "@babel/preset-env": "^7.26.0",
     "@babel/preset-typescript": "^7.26.0",
-    "@google/clasp": "^2.4.2",
+    "@google/clasp": "^2.5.0",
     "@rollup/plugin-babel": "^6.0.4",
-    "@rollup/plugin-node-resolve": "^15.3.0",
-    "@rollup/plugin-typescript": "^12.1.1",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "^12.1.2",
     "@types/eslint__js": "^8.42.3",
-    "@types/google-apps-script": "^1.0.85",
-    "@types/node": "^22.10.0",
+    "@types/google-apps-script": "^1.0.91",
+    "@types/node": "^22.10.7",
     "biome": "^0.3.3",
-    "rollup": "^4.27.4",
+    "rollup": "^4.31.0",
     "rollup-plugin-google-apps-script": "^2.0.1",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.3"
   },
   "packageManager": "pnpm@9.14.2+sha512.6e2baf77d06b9362294152c851c4f278ede37ab1eba3a55fda317a4a17b209f4dbb973fb250a77abc463a341fcb1f17f17cfa24091c4eb319cda0d9b84278387"
 }
